@@ -14,7 +14,7 @@ function App() {
   }
 
   const formMapIn = () => {
-    navigate('/Form/')
+    navigate('/')
   }
 
   // форма регистрации
@@ -63,7 +63,7 @@ function App() {
           throw new Error('Сеть ответила с кодом: ' + response.status);
         }
         setTimeout(() => {
-          navigate('/Form/');
+          navigate('/Main');
         }, 1000)
         return response.json();
         // navFormIn();
@@ -147,7 +147,7 @@ function App() {
         if (!response.ok) {
           throw new Error('Сеть ответила с кодом: ' + response.status);
         }
-          navigate('/Form/Main');
+          navigate('/Main');
         return response.json();
         // navFormIn();
       })
@@ -170,7 +170,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path='/Form/' element={
+      <Route path='/Form1/' element={
         <FormIn
           formMapReg={formMapReg}
           inputLogin2={inputLogin2}
@@ -183,7 +183,7 @@ function App() {
           addFormInData={addFormInData}
 
         />} />
-      <Route path='/Form/FormReg' element={
+      <Route path='/FormReg' element={
         <FormReg
           formMapIn={formMapIn}
           inputSurname={inputSurname}
@@ -206,7 +206,7 @@ function App() {
           addFormRegData={addFormRegData}
 
         />} />
-      <Route path='/Form/Main' element={<Main 
+      <Route path='/Main' element={<Main 
       inputLogin={inputLogin}
       inputName={inputName}
       inputSurname={inputSurname}
