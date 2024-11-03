@@ -1,0 +1,17 @@
+.form_btn_reg_sise{
+    /* max-width: 200px; */
+    /* min-width: 100px; */
+    background-color: #01c9bb;
+    border: none;
+    color: black;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    /* display: block; */
+    text-transform: uppercase;
+    font-size: 12px;
+    box-shadow: 0 10px 30px 0 #00b1a5;
+    border-radius: 5px 5px 5px 5px;
+   
+    transition: all 0.3s ease-in-out;
+}
